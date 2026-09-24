@@ -1,0 +1,28 @@
+{
+  "feature_count": 23,
+  "features": [
+    "return_1d",
+    "return_3d",
+    "return_5d",
+    "sma_5",
+    "sma_20",
+    "sma_50",
+    "ema_12",
+    "ema_26",
+    "macd",
+    "macd_signal",
+    "rsi_14",
+    "volatility_5d",
+    "volatility_20d",
+    "volume_change_1d",
+    "volume_sma_20",
+    "news_count",
+    "sentiment_mean",
+    "sentiment_std",
+    "sentiment_min",
+    "sentiment_max",
+    "positive_ratio",
+    "negative_ratio",
+    "neutral_ratio"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "model_name": "NEXUS_XGBoost_Direction_Classifier_Tuned_Calibrated",
+  "model_version": "v2.0.0-tuned-calibrated",
+  "training_window": {
+    "start": "2018-01-01",
+    "end": "2021-12-31"
+  },
+  "validation_window": {
+    "start": "2022-01-01",
+    "end": "2022-12-31"
+  },
+  "test_window": {
+    "start": "2023-01-01",
+    "end": "2023-12-31"
+  },
+  "validation_metrics": {
+    "best_validation_roc_auc": 0.5194,
+    "calibrated_brier_score": 0.2486
+  },
+  "out_of_sample_metrics_2023": {
+    "roc_auc": 0.5064,
+    "f1_score": 0.0,
+    "accuracy": 0.4464,
+    "precision": 0.0,
+    "recall": 0.0,
+    "brier_score": 0.2548
+  },
+  "calibration": {
+    "method": "sigmoid",
+    "fitted_on_window": "2022-01-01 to 2022-12-31 (Validation Set)",
+    "serialization_format": "joblib",
+    "primary_artifact": "xgb_direction_calibrated.joblib"
+  },
+  "best_hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": 5,
+    "learning_rate": 0.07587678337146855,
+    "min_child_weight": 14,
+    "subsample": 0.7,
+    "colsample_bytree": 0.55,
+    "gamma": 2.9794742641306153,
+    "reg_alpha": 0.12942147572978885,
+    "reg_lambda": 2.4250546581954646,
+    "random_state": 42,
+    "eval_metric": "logloss",
+    "tree_method": "hist"
+  },
+  "tickers": [
+    "AAPL",
+    "AMD",
+    "AMZN",
+    "GOOGL",
+    "JPM",
+    "MSFT",
+    "NFLX",
+    "NVDA",
+    "TSLA"
+  ],
+  "features": [
+    "return_1d",
+    "return_3d",
+    "return_5d",
+    "sma_5",
+    "sma_20",
+    "sma_50",
+    "ema_12",
+    "ema_26",
+    "macd",
+    "macd_signal",
+    "rsi_14",
+    "volatility_5d",
+    "volatility_20d",
+    "volume_change_1d",
+    "volume_sma_20",
+    "news_count",
+    "sentiment_mean",
+    "sentiment_std",
+    "sentiment_min",
+    "sentiment_max",
+    "positive_ratio",
+    "negative_ratio",
+    "neutral_ratio"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "dataset_name": "NEXUS_Stock_AI_model_dataset_v1",
+  "total_rows": 66865,
+  "total_columns": 32,
+  "feature_count": 29,
+  "feature_columns": [
+    "open",
+    "high",
+    "low",
+    "close",
+    "adj_close",
+    "volume",
+    "return_1d",
+    "return_3d",
+    "return_5d",
+    "sma_5",
+    "sma_20",
+    "sma_50",
+    "ema_12",
+    "ema_26",
+    "macd",
+    "macd_signal",
+    "rsi_14",
+    "volatility_5d",
+    "volatility_20d",
+    "volume_change_1d",
+    "volume_sma_20",
+    "news_count",
+    "sentiment_mean",
+    "sentiment_std",
+    "sentiment_min",
+    "sentiment_max",
+    "positive_ratio",
+    "negative_ratio",
+    "neutral_ratio"
+  ],
+  "target_column": "target",
+  "target_classes": {
+    "0": "DOWN or FLAT",
+    "1": "UP"
+  },
+  "class_balance": {
+    "class_0_down": 33611,
+    "class_1_up": 33254,
+    "class_1_percentage": 49.73
+  },
+  "date_ranges": {
+    "start_date": "1980-05-27",
+    "end_date": "2023-12-27"
+  },
+  "ticker_breakdown": {
+    "AMD": 10990,
+    "JPM": 10990,
+    "AAPL": 10802,
+    "MSFT": 9476,
+    "AMZN": 6650,
+    "NVDA": 6225,
+    "NFLX": 4501,
+    "GOOGL": 3882,
+    "TSLA": 3349
+  }
+}
