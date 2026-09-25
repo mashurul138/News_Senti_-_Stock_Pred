@@ -370,7 +370,7 @@ with tab1:
         xaxis_rangeslider_visible=False,
         showlegend=False
     )
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
     st.markdown("---")
 
@@ -442,7 +442,7 @@ with tab2:
     leaderboard_df = pd.DataFrame(leaderboard_data)
     st.dataframe(
         leaderboard_df.style.highlight_max(subset=["ROC-AUC", "F1-Score", "Accuracy"], color="#1b5e20"),
-        use_container_width=True
+        width="stretch"
     )
 
     # Core Research Finding Callout
@@ -480,19 +480,19 @@ with tab2:
     with col_img1:
         st.markdown("**ROC Curves & Top Feature Importances:**")
         if roc_plot:
-            st.image(roc_plot, use_container_width=True)
+            st.image(roc_plot, width="stretch")
         else:
             st.warning("File roc_and_feature_importance.png not found.")
 
     with col_img2:
         st.markdown("**Global SHAP Feature Summary:**")
         if shap_summary:
-            st.image(shap_summary, use_container_width=True)
+            st.image(shap_summary, width="stretch")
         else:
             st.warning("File shap_summary_plot.png not found.")
 
     if shap_sample:
         st.markdown("**Local Prediction Waterfall Decomposition:**")
-        st.image(shap_sample, use_container_width=True)
+        st.image(shap_sample, width="stretch")
     else:
         st.warning("File shap_sample_explanation.png not found.")

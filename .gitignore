@@ -22,7 +22,7 @@ data/sentiment_news.parquet
 
 # Retain only final lightweight model artifacts and metadata
 # data/model_dataset_v1.parquet can be tracked if <100MB, otherwise ignore:
-data/*.parquet
+# data/*.parquet
 
 # OS / Editor files
 .DS_Store
