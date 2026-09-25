@@ -14,11 +14,11 @@ venv/
 *.tar.gz
 
 # Raw intermediate data (Keep on Google Drive)
-data/nasdaq_exteral_data.csv
-data/full_history.zip
-data/filtered_news.parquet
-data/aligned_news.parquet
-data/sentiment_news.parquet
+# data/nasdaq_exteral_data.csv
+# data/full_history.zip
+# data/filtered_news.parquet
+# data/aligned_news.parquet
+# data/sentiment_news.parquet
 
 # Retain only final lightweight model artifacts and metadata
 # data/model_dataset_v1.parquet can be tracked if <100MB, otherwise ignore:
